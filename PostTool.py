@@ -12,7 +12,7 @@ class PostTool(PostToolGUI):
     def cmd_click(self, event):
         url = self.txtURL.get().lower().strip()
         if url=='':
-            tkMessageBox.showinfo('Emptry URL', 'Please input a valid URL.')
+            tkMessageBox.showinfo('Empty URL', 'Please input a valid URL.')
             return
         
         self.protocol = 'http'
